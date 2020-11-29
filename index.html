@@ -10,6 +10,12 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/402ab2e351.js"
       crossorigin="anonymous"
@@ -70,7 +76,7 @@
         <a href="/login">Sign-in / Sign-up</a>
       </div>
     </nav>
-    <article class="container mt-3">
+<!--     <div class="container alert-container">
       <div class="row d-none d-sm-block">
         <div class="col-12">
           <div class="alert alert-warning text-center">
@@ -79,11 +85,15 @@
           </div>
         </div>
       </div>
-      <!--Callout-->
+    </div> -->
+    <!--Callout-->
+    <div class="container-fluid callout-container">
+    <div class="opaque-overlay">&nbsp;</div>
       <div class="row">
         <div class="col-12">
           <section class="callout jumbotron text-center">
-            <h1>The finest wiskeys deliverd to your doorstep.</h1>
+            <h1 class="jumbotron-header">The finest wiskeys deliverd to your doorstep.</h1>
+            <hr class="block-divider">
             <p class="lead">
               Sign up today to start receiving the world's best wiskey every
               month.
@@ -92,12 +102,12 @@
               <strong><mark>First one is free!</mark></strong>
             </p>
             <button
-              class="btn btn-success btn-lg"
+              class="btn btn-lg btn--cta btn--red"
               type="button"
               data-target="#signUpModal"
               data-toggle="modal"
             >
-              Sign up
+              Sign up!
             </button>
             <p class="text-muted">
               <small
@@ -108,10 +118,11 @@
           </section>
         </div>
       </div>
-      <!--/.Callout-->
-      <hr />
-      <!--Quotes-->
+    </div>
+    <!--/.Callout-->
 
+    <!--Quotes-->
+    <div class="container quotes-container">
       <section class="quotes">
         <div class="row">
           <div class="col-12 my-5">
@@ -162,12 +173,11 @@
           </div>
         </div>
       </section>
-      <!--./Quotes-->
+    </div>
+    <!--./Quotes-->
 
-      <hr />
-
-      <!-- Features -->
-
+    <!-- Features -->
+    <div class="container features-container">
       <section class="features">
         <div class="row">
           <div class="col-12 my-5">
@@ -220,12 +230,12 @@
           </div>
         </div>
       </section>
+    </div>
 
-      <!-- /.features -->
+    <!-- /.features -->
 
-      <hr />
-
-      <!--.Monthly favorites-->
+    <!--.Monthly favorites-->
+    <div class="container monthly-favorites-container">
       <section class="monthly-favorites">
         <div class="row">
           <div class="col-12 my-5">
@@ -253,9 +263,9 @@
           </div>
         </div>
       </section>
+    </div>
+    <!--/.Monthly favorites-->
 
-      <!--/.Monthly favorites-->
-    </article>
     <!-- Modal -->
     <div id="signUpModal" class="modal fade" role="dialog" tabindex="-1">
       <div class="modal-dialog" role="document">
@@ -276,18 +286,36 @@
             <form>
               <div class="form-group">
                 <label for="email">Email address:</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"/>
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else</small>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else</small
+                >
               </div>
               <div class="form-group">
                 <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Password"/>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pwd"
+                  placeholder="Password"
+                />
               </div>
-            <div class="form-group">
+              <div class="form-group">
                 <label for="pwd-repeat">Repeat password:</label>
-                <input type="password" class="form-control" id="pwd-repeat" placeholder="Repeat password"/>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pwd-repeat"
+                  placeholder="Repeat password"
+                />
               </div>
-              <button type="submit" class="btn btn-success" >Submit</button>
+              <button type="submit" class="btn btn-success">Submit</button>
             </form>
           </div>
         </div>
