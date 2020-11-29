@@ -2,6 +2,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container-wrapper{
+    background-color: rgba(71, 77, 71, 0.5);
+}
+
+.container-wrapper--red{
+    background-color: rgba(170, 61, 10, 0.5);
+}
+
 /* navbar */
 .navalert-container{
     position: absolute;
@@ -50,6 +58,7 @@ body {
 
   background: url("../images/whiskey-background.jpg") no-repeat bottom right
     fixed;
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -60,6 +69,10 @@ body {
   justify-content: center;
 
   position: relative;
+  animation-name: zoom;
+  animation-duration: 5s;
+animation-fill-mode: forwards;
+
 }
 
 .opaque-overlay{
@@ -131,8 +144,8 @@ body {
 
 .btn--red{
     color: white;
-    background-color: #f05f40;
-    border-color: #f05f40;
+    background-color: rgba(170, 61, 10, 0.5);
+    border-color: rgba(170, 61, 10, 0.5);
 }
 
 .btn--cta:hover,
@@ -142,4 +155,63 @@ body {
     background-color: #83250f;
     border-color: #83250f;
     color: white;
+}
+
+/* Page headers */
+
+.page-header{
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2{
+    margin-top: 0;
+}
+
+.quotes-container .page-header{
+    margin-bottom: 25px;
+}
+
+/* Content container */
+
+.content-container{
+    padding-top:75px;
+    padding-bottom:75px;
+}
+
+.feature{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+    color: rgba(170, 61, 10, 0.7);
+}
+
+.feature .btn{
+    border-color:rgba(170, 61, 10, 0.5);
+    background-color: rgba(170, 61, 10, 0.5);
+    border-radius: 15px;
+    min-width: 100px;
+    margin-top:10px;
+    color: white;
+}
+
+.feature .btn:hover{
+    background-color: #83250f;
+    border-color: #83250f;
+}
+
+
+@keyframes zoom{
+    from{
+        transform: scale(100%);
+        }
+    to {
+        transform: scale(115%)
+    }
 }
